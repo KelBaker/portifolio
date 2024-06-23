@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.card img {
+    width: 550px;   
+    margin-top: 15px;
+    margin-right: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgb(19, 1, 18);
+    border: 1px solid rgb(0, 0, 0);
+
+
+}
+
+
+.card img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+.card section {
+    background-image: linear-gradient(40deg, #8b1a76 0, #70146a 16.67%, #540c5b 33.33%, #370449 50%, #1e0036 66.67%, #0d0026 83.33%, #000019 100%);    
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 4px 8px rgb(19, 1, 18)
+}
+
+.card h3 {
+    font-size: 25px;
+}

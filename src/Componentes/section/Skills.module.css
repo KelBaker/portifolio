@@ -1,0 +1,62 @@
+.skill {
+    background-image: radial-gradient(circle at 50% -14.95%, #211125 0, #120016 50%, #000000 100%);
+    border-radius: 15px;
+    margin: 75px;
+    padding: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img.javascript {
+    height: 130px;
+    margin: 35px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img.html {
+    height: 115px;
+    margin: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img.css {
+    height: 155px;
+    margin: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img.react {
+    height: 130px;
+    margin: 35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img.typescript {
+    height: 115px;
+    margin: 55px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgb(5, 5, 5);
+}
+
+.skill img:hover {
+    transform: translateY(-7px);
+    transition-duration: 1s;
+}
+
+.skill h1 {
+    font-size: 45px;
+}
+
+.skill p {
+    font-size: 20px;
+}
