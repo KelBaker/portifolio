@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     margin-top: 125px;
-    background-color: #0F0E10;
+    background-color: #050006;
+    border-top: 0.2px solid white;
 }
 
 .footer ul {
@@ -24,4 +25,60 @@
 
 .footer p {
     margin: 25px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 520px) {
+    .footer {
+        margin:0px;
+        background-color: #0F0E10;
+        margin-top: 30px;
+        display: flex;
+        margin-top: 35px;
+        list-style: none;
+
+
+
+    }
+    .footer ul {
+        margin: 10px;
+        gap: 10px;
+        list-style: none;
+        margin-top: 10px;
+
+    }
+    
+    
+    .footer li {
+        margin-left: 5px;
+        list-style: none;
+
+    }
+    
+    .footer p {
+        margin: 5px;
+        margin-top: 18px;
+        font-size: 10px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+
+}
+
+.iconsfooter {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+}
+
+.iconsfooter li {
+    margin: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
 }

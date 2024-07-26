@@ -1,9 +1,23 @@
 .projects {
     text-align: justify;
     margin-left: 75px;
+    
 }
 
 .projects h1 {
     font-size: 45px;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 520px) {
+    .projects {
+        margin-left: 150px; 
+        margin: auto; 
+        margin-top: 80px; 
+
+    }
+
+    .projects h1 {
+        font-size: 25px; 
+        margin-left: 20px;
+    }
+}

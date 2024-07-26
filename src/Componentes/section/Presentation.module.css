@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
 
+
 .presentation {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 70px;
-    max-width: 900px;
     margin: 0 auto;
     align-items: start;
     font-family: 'Baloo Bhaijaan 2', sans-serif;
     text-align: justify;
     line-height: 1.4;
     position: relative;
+    color: aliceblue;
+    max-width: 900px;
 }
 
 .presentation h1 {
@@ -43,16 +44,74 @@
     margin-right: 0;
     border: 1px transparent black;
     position: relative;
-    animation: floatAnimation 5s ease-in-out infinite;
     border-radius: 120px;
 
 }
 
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
+
+ 
+  @media only screen and (min-width: 400px) and (max-width: 520px) {
+    
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
-    50% {
-        transform: translateY(-10px);
+    
+    
+    
+    .presentation {
+        display: contents;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        text-align: justify;
+        line-height: 1.4;
+        position: relative;
+        color: aliceblue;
+
+    }
+    
+    .presentation h1 {
+        margin-left: 20px;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .presentation h4 {
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+    
+    .presentation p {
+        font-size: 12px;
+        margin-bottom: 12px;
+        margin-left: 20px;
+        max-width: 90%;
+    }
+    
+    .foto {
+        margin-top: 90px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 25px;
+        
+    }
+    
+    .foto img {
+        height: 200px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        animation: bounce 2s infinite alternate;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
     }
 }

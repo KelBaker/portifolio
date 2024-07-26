@@ -1,12 +1,13 @@
 .btn {
     background-color: transparent;
-    color: white;
+    color: aliceblue;
     padding: 10px;
     border-radius: 10px;
     font-weight: bolder;
     margin-top: 15px;
     cursor: pointer;
-    border: 2px solid aliceblue;
+    border: 1px solid aliceblue;
+    margin-left: 15px;
 }
 
 .btn:hover {

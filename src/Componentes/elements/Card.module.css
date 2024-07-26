@@ -2,15 +2,18 @@
     display: flex;
     justify-content: center;
     margin: 15px;
+
 }
 
 .card img {
     width: 550px;   
     margin-top: 15px;
     margin-right: 50px;
-    border-radius: 25px;
+    border-radius: 10px 0 0 0;
     box-shadow: 0 4px 8px rgb(19, 1, 18);
     border: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid white;
+
 
 
 }
@@ -30,9 +33,24 @@
     border-radius: 20px;
     width: 500px;
     filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-    box-shadow: 0 4px 8px rgb(19, 1, 18)
+    box-shadow: 0 4px 8px rgb(19, 1, 18);
 }
 
 .card h3 {
     font-size: 25px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 520px) {
+    .card img {
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15%;
+        border-top: 1px solid white;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+
+
+    
 }
