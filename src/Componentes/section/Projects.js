@@ -26,8 +26,7 @@ function Projects() {
              title='Portifolio Respansivo'
              tech='  javaScript, CSS, HTML e REACT'
              description='Desenvolvimento do meu portifolio como programador Front-End, incluindo respansividade para dispositivos móveis'
-             repo='https://github.com/KelBaker/Meu-portifolio'
-             site='https://desafio-2-resolucao.netlify.app/' 
+             repo='https://github.com/KelBaker/portifolio'
             />
             <Card
              img={portifolio}
