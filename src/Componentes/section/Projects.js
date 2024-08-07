@@ -34,8 +34,8 @@ function Projects() {
              title='Portifolio com função Dark-Mode'
              tech=' javaScript, CSS, HTML e REACT'
              description='Desenvoolvimento de um portifólio utilizando Hooks UseState e UseEffect para a elaboração da troca (pela preferência do visitante) ao modo escuro ou modo claro.'
-             repo='https://github.com/KelBaker/Desafio-2-resolucao'
-             site='https://desafio-2-resolucao.netlify.app/' 
+             repo='https://github.com/KelBaker/desafio3-portifolio'
+             site='https://desafio3-portifolio.vercel.app/' 
             />
             <Card
              img={landingpage}
