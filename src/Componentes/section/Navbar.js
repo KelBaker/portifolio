@@ -1,23 +1,62 @@
-import styles from "./Navbar.module.css"
-import {FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import Nav from "react-bootstrap/Nav";
-
+import { useState } from "react";
+import styles from "./Navbar.module.css";
+import menu from "../../image/NavbarFooter images/menu.svg";
+import close from "../../image/NavbarFooter images/close.svg";
+import logo from "../../image/NavbarFooter images/logo.svg";
 
 function Navbar() {
-    return(
-        <div className={styles.navbar} >
-            <ul>
-                <li><Nav.Link href="#Presentation">Apresentação</Nav.Link></li>
-                <li><Nav.Link href="#Skills">Habilidades</Nav.Link></li>
-                <li><Nav.Link href="#Projects">Projetos</Nav.Link></li>
-            </ul>
-            <ul className={styles.icons}> 
-                <li><a href="https://www.instagram.com/kelhenrique_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
-                <li><a href="https://www.linkedin.com/in/kelvin-henrique-507bb9228/" target='_blank' rel='noopener noreferrer'><FaLinkedin/></a></li>
-                <li><a href="https://github.com/KelBaker?tab=repositories" target='_blank' rel='noopener noreferrer'><FaGithub/></a></li>
-            </ul>
-        </div>
-    )
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    return (
+        <>
+            <div className={styles.navbar}>
+                <img
+                    src={logo}
+                    alt="logo"
+                    style={{ width: "100px", height: "80px" }}
+                    className={styles.logo}
+                />
+                <ul className={styles.icons}>
+                    <img
+                        src={isModalOpen ? close : menu}
+                        alt="menu"
+                        style={{ width: "50px", height: "60px", cursor: "pointer" }}
+                        onClick={() => setIsModalOpen(!isModalOpen)}
+                    />
+                </ul>
+            </div>
+
+            {isModalOpen && (
+                <div className={styles.modalOverlay} onClick={() => setIsModalOpen(false)}>
+                    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                        <img
+                            src={close}
+                            alt="Fechar"
+                            className={styles.closeIcon}
+                            onClick={() => setIsModalOpen(false)}
+                        />
+                        <ul className={styles.menuList}>
+                            <li>
+                                <a href="https://www.instagram.com/kelhenrique_" target="_blank" rel="noopener noreferrer">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:Kelbaker56@gmail.com">
+                                    E-mail
+                                </a>
+                            </li>
+                            <li>
+                                <h4>
+                                    Telefone: +55 (11) 91345-0341 
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            )}
+        </>
+    );
 }
 
-export default Navbar
+export default Navbar;

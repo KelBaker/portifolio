@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(140deg, #1ce4e429, #040707, #040707, #1ce4e409, #040707, #040707, #22ffff18, #22ffff1a, #040707, #040707, #22ffff2f);
+    background-size: cover;
+    min-height: 180vw;
+
+}
+
+.purple {
+    position: absolute;
+    margin-top: 30vw;
+    bottom: 65;
+    left: 78%;
+    transform: translateX(-50%);
+    width: 450px;
+    z-index: 10;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+.texto {
+    font-size: 21px;
+    max-width: 700px;
+    margin-top: 28vw;
+    margin-left: 8vw;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+.Titulo {
+    position: absolute;
+    width: 450px;
+    margin-top: 15vw;
+    margin-left: 8vw;
+}
+
+.nuvem {
+    margin-top: 7vw;
+}
+
+
+.contactMe {
+    width: 450px;
+    margin-left: 8vw;
+    
+}
+
+.formulario {
+    width: 425px;
+    margin-left: 8vw;
+    margin-top: 1vw;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.btn1 {
+    display: block;
+    margin-top: 1vw;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.btn2 {
+    background-color: transparent;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid aliceblue;
+    width: 400px;
+    height: auto;
+    font-size: 27px;
+    margin-top: 2vw;
+    
+}
+
+
+.btn2:hover {
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+    color: black;
+}
+
+
+.MinhaMarca {
+    width: 600px;
+    position: absolute;
+    right: 10%;
+    top: 395vw;
+}
+
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8vw;
+    margin-top: 15vw;
+    gap: 3vw;
+    margin-bottom: 15vw;
+}
+
+
+.GitHub{
+    width: 320px;
+
+}
+
+
+.Linkedin {
+    width: 320px;
+}
+
+
+.Curriculo{
+    width: 320px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        display: flex;
+        grid-template-columns: auto;
+    }
+
+
+    .MinhaMarca {
+        width: 400px;
+        right: 0%;
+        top: 0;
+        position: static;
+        margin-bottom: 15vw;
+       
+    }
+    
+
+    .texto {
+        font-size:12px;
+        margin-top: 35VW;
+        max-width: 80vw;
+    }
+
+    .Titulo {
+        width: 180px;
+    }
+
+    .purple {
+        display: none;
+    }
+
+    .nuvem {
+        margin-top: 13vw;
+    }
+    
+    .contactMe {
+        width: 180px;
+    }
+    
+    .formulario {
+        margin-top: 3vw;
+        margin-left: 6vw;
+        width: auto;
+    }
+    
+
+    
+    .btn1 {
+        display: block;
+        margin-top: 1vw;
+        width: 290px;
+        padding: 9px;
+        border-radius: 10px;
+        font-size: 16px;
+    
+    }
+
+    .btn2 {
+        width: 290px;
+        margin-right: 28vw;
+        margin-top: 5vw;
+    }
+    
+
+    .Icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15vw;
+        
+
+    }
+
+    .GitHub{
+        width: 180px;
+        margin-bottom: 10vw;
+    
+    }
+    
+    
+    .Linkedin {
+        width: 180px;
+        margin-bottom: 10vw;
+
+    }
+    
+    
+    .Curriculo{
+        width: 180px;
+        margin-bottom: 10vw;
+
+    }
+    
+    
+}

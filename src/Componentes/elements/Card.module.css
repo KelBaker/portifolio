@@ -1,56 +1,157 @@
 .card {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 15px;
-
-}
-
-.card img {
-    width: 550px;   
-    margin-top: 15px;
-    margin-right: 50px;
-    border-radius: 10px 0 0 0;
-    box-shadow: 0 4px 8px rgb(19, 1, 18);
-    border: 1px solid rgb(0, 0, 0);
-    border-top: 1px solid white;
-
-
-
-}
-
-
-.card img:hover {
-    transform: translateY(-10px);
-    cursor: pointer;
-    transition-duration: 1s;
-}
-
-
-.card section {
-    background-image: linear-gradient(40deg, #8b1a76 0, #70146a 16.67%, #540c5b 33.33%, #370449 50%, #1e0036 66.67%, #0d0026 83.33%, #000019 100%);    
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 20px;
-    width: 500px;
-    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-    box-shadow: 0 4px 8px rgb(19, 1, 18);
-}
-
-.card h3 {
-    font-size: 25px;
-}
-
-@media only screen and (min-width: 400px) and (max-width: 520px) {
-    .card img {
-        width: 75%;
-        align-items: center;
-        justify-content: center;
-        margin-left: 15%;
-        border-top: 1px solid white;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-
-
+    margin-left: 11vw;
     
 }
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+.conapi img{
+    width: 650px;
+    margin-top: 20vw;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.745);
+}
+
+.conapi section {
+    width: 600px;
+    margin-top: 22vw;
+    height: 300px;
+}
+
+
+
+.meuportifolio img {
+    width: 650px;
+    margin-top: 7vw;
+    margin-left: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 400px rgb(35, 1, 46);
+}
+
+
+.meuportifolio section {
+    width: 430px;
+    margin-top: 9vw;
+    height: 300px;
+    margin-left: 170px;
+    
+}
+
+
+
+.novoportifolio img{
+    width: 650px;
+    margin-top: 7vw;
+    margin-right: 100px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 450px rgba(1, 18, 74, 0.619);
+}
+
+.novoportifolio section {
+    width: 430px;
+    margin-top: 9vw;
+    height: 300px;
+    margin-right: 100px;
+}
+
+.landingpage img {
+    width: 650px;
+    margin-top: 7vw;
+    margin-left: 120px;
+    border-radius: 5px;
+}
+
+.landingpage section {
+    width: 460px;
+    margin-top: 9vw;
+    height: 300px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vw;
+        width: 320px ;
+        height: auto;
+        margin-right: 8vw;
+        
+        
+    }
+    
+    .conapi img{
+        width: 320px ;
+        height: auto;
+        margin-top: 30vw;
+        
+    }    
+
+    .conapi section {
+        width: 250px;
+        margin-top: 7vw;
+        font-size: 15px;
+    }
+    
+    .meuportifolio img {
+        width: 310px ;
+        height: auto;
+        margin: 0 !important;        
+
+    }
+
+    
+    .meuportifolio section {
+        width: 250px;
+        margin-top: 7vw;
+        margin-right: 39vw;
+        font-size: 15px;
+    }
+    
+    .novoportifolio img{
+        width: 320px ;
+        height: auto;
+        margin-right: 0;
+
+
+    }
+    
+    .novoportifolio section {
+        width: 250px;
+        margin-top: 7vw;
+        margin-left: 25vw;
+        font-size: 15px;
+
+    }
+    
+    .landingpage img {
+        width: 320px ;
+        height: auto;
+        margin: 0 !important; 
+
+
+    }
+    
+    .landingpage section {
+        width: 250px;
+        margin-top: 7vw;
+        margin-right: 26vw;
+        font-size: 15px;
+
+    }
+
+}
+

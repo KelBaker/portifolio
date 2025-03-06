@@ -1,23 +1,44 @@
 .projects {
-    text-align: justify;
-    margin-left: 75px;
-    
+    background-image: radial-gradient(circle at 50% -14.95%, #161414 0, #120e13 50%, #03000b 100%);
+    padding: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: auto;
+    min-height: 90vw;
+    margin-top: 5vw;
+    position: relative;  
 }
 
-.projects h1 {
-    font-size: 45px;
+.projectsName {
+    position: absolute;
+    right: 7%;
+    margin-top: 7vw;
+    width: 22vw;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 520px) {
+.projectsVaretas {
+    position: absolute;
+    left: 3%;
+    margin-top: 4vw;
+    width: 6vw;
+    height: 98%;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .projectsName {
+        width: 130px;
+
+    }
+
+    .projectsVaretas {
+        display: none;
+    }
+
     .projects {
-        margin-left: 150px; 
-        margin: auto; 
-        margin-top: 80px; 
-
+        padding: 0;
+        width: auto;
+        
     }
 
-    .projects h1 {
-        font-size: 25px; 
-        margin-left: 20px;
-    }
 }

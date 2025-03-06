@@ -1,18 +1,28 @@
-import {FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
-import styles from '../section/Footer.module.css'
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import styles from '../section/Footer.module.css';
+import logo from  '../../image/NavbarFooter images/logo.svg';
+import nome from  '../../image/NavbarFooter images/nome.svg';
 
 function Footer() {
     return(
         <div className={styles.footer}> 
-              <ul className={styles.iconsfooter}>
-                <li><a href="https://www.instagram.com/kelhenrique_/" target="_blank" rel="noopener noreferrer"><FaInstagram size={20}/></a></li>
-                <li><a href="https://www.linkedin.com/in/kelvin-henrique-507bb9228/" target='_blank' rel='noopener noreferrer'><FaLinkedin size={20}/></a></li>
-                <li><a href="https://github.com/KelBaker?tab=repositories" target='_blank' rel='noopener noreferrer'><FaGithub size={20}/></a></li>
-            </ul>
-            <p>Kelbaker56@gmail.com.br</p>
-            <p>Kelvin Henrique © 2024 </p>
+            <div className={styles.footerContent}>
+                <img src={logo} alt='logo' className={styles.logo}/>
+
+                <div className={styles.links}>
+                    <a href="#Presentation" className={styles.link}>Presentation</a>
+                    <a href="#Projects" className={styles.link}>Projects</a>
+                    <a href="#AbouthMe" className={styles.link}>AboutMe</a>
+                    <a href="#ContactMe" className={styles.link}>ContactMe</a>
+                </div>
+                     <div className={styles.direitos}>
+                        <img src = {nome} alt ='nome' className={styles.nome}/>
+                        <h4>© 2024 Todos os direitos reservados.<br/>Desenvolvido por Kelvin Henrique | dev</h4>
+
+                     </div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

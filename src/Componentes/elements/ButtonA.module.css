@@ -1,17 +1,31 @@
 .btn {
-    background-color: rgb(6, 19, 92);
-    color: white;
+    background-color: transparent;
+    color: aliceblue;
     padding: 10px;
     border-radius: 10px;
     font-weight: bolder;
     margin-top: 15px;
     cursor: pointer;
-    border: none;
-    margin-left: 20px;
+    border: 1px solid aliceblue;
+    margin-left: 15px;
+    width: 300px;
+    height: auto;
+    margin-right: 28.2vw;
+    margin-bottom: 4vw;
+    font-size: 27px;
 }
 
 .btn:hover {
-    background-color: rgb(68, 13, 194);
+    background-color: rgb(255, 255, 255);
     transition-duration: 0.5s;
     transform: translateY(-7px);
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .btn {
+        margin-left: 11vw;
+        display: none;
+    }
+
 }

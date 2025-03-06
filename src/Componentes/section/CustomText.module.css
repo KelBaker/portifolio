@@ -1,0 +1,62 @@
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(135deg, #e7f8fc, rgb(255, 255, 255), #e6f6fa);
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+
+.marquee {
+    display: inline-block;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-105%);
+    }
+}
+
+.title {
+    font-size: 35px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+span {
+    font-size: 38px;
+    color: rgb(91, 206, 255);
+    margin: 0 13px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        overflow: hidden;
+        width: 100%;
+        background: linear-gradient(135deg, #e7f8fc, rgb(255, 255, 255), #e6f6fa);
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-right: 10px;
+        color: black;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    span {
+        font-size: 15px !important;
+        color: rgb(91, 206, 255);
+        margin: 0 13px;
+    }
+        
+}
