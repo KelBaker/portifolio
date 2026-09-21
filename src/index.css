@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-:root { --ink: #161616; --muted: #77756e; --paper: #f2f1ed; --lime: #d8f56a; --line: rgba(22,22,22,.14); }
+:root { --ink: #f7f4ff; --muted: #b8aac5; --paper: #100817; --lime: #d68cff; --line: rgba(214,140,255,.2); --panel: #1b0e25; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: radial-gradient(circle at 50% 120%, #2b0631 0, #160b20 38%, var(--paper) 78%); color: var(--ink); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
-::selection { background: var(--lime); color: var(--ink); }
+::selection { background: var(--lime); color: #160b20; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }

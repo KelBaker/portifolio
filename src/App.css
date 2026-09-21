@@ -27,7 +27,7 @@ h1 em, h2 em { color: #849d18; font-style: normal; }
 .orb { border-radius: 50%; position: absolute; }
 .orb-one { background: var(--lime); height: 275px; right: 10px; top: 22px; width: 275px; }
 .orb-two { border: 1px solid var(--ink); height: 150px; left: 15px; top: 170px; width: 150px; }
-.hero-card { background: var(--ink); bottom: 10px; color: var(--paper); display: flex; flex-direction: column; height: 195px; justify-content: space-between; left: 46px; padding: 19px; position: absolute; transform: rotate(-8deg); width: 220px; }
+.hero-card { background: var(--panel); border: 1px solid var(--line); bottom: 10px; color: var(--ink); display: flex; flex-direction: column; height: 195px; justify-content: space-between; left: 46px; padding: 19px; position: absolute; transform: rotate(-8deg); width: 220px; }
 .hero-card span, .hero-card small { color: var(--lime); font: 10px 'DM Mono', monospace; }
 .hero-card strong { font-size: 26px; letter-spacing: -.06em; line-height: .95; }
 .ticker { background: var(--ink); color: var(--paper); font: 11px 'DM Mono', monospace; overflow: hidden; padding: 17px 0; white-space: nowrap; }
@@ -50,7 +50,10 @@ h3 { font-size: 23px; letter-spacing: -.05em; margin-bottom: 8px; }
 .project-links { display: flex; flex-direction: column; font: 10px 'DM Mono', monospace; gap: 8px; text-transform: uppercase; }
 .skills { border-top: 1px solid var(--line); }
 .skill-list { border-top: 1px solid var(--line); }
+.skill-marquee { animation: skills-loop 22s linear infinite; }
+.skill-marquee:hover { animation-play-state: paused; }
 .skill-item { align-items: center; border-bottom: 1px solid var(--line); display: flex; padding: 22px 0; }
+@keyframes skills-loop { from { transform: translateY(0); } to { transform: translateY(-50%); } }
 .skill-item span:first-child { color: var(--muted); font: 10px 'DM Mono', monospace; width: 80px; }
 .skill-item strong { font-size: clamp(22px, 3vw, 38px); letter-spacing: -.06em; }
 .skill-arrow { color: #849d18; font-size: 21px; margin-left: auto; }
